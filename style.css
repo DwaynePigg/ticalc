@@ -1,0 +1,22 @@
+* {
+	font-family: monospace;
+}
+
+body {
+	background-color: #E0DFDB;
+}
+
+canvas {
+	image-rendering: pixelated;
+	/* image-rendering: crisp-edges; */
+	padding: 1px;
+	border: 1px solid rgba(0, 0, 0, .5);
+}
+
+/*
+img {
+	image-rendering: crisp-edges;
+	height: 157px;
+	width: 114px;
+}
+*/
