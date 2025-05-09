@@ -10,7 +10,7 @@ var context = canvas.getContext('2d');
 context.imageSmoothingEnabled = false;
 var charMap = new Image();
 charMap.onload = render;
-charMap.src = 'char.png';
+charMap.src = 'chara.png';
 
 function render() {
 	output(1, 1, "PART 0: THE PROMISE");
@@ -34,7 +34,6 @@ function renderChar(row, col, ch) {
 	let i = (ch - 32);
 	let spriteRow = (i & 0xF0) >> 4;
 	let spriteCol = i & 0xF;
-	console.log(spriteRow, spriteCol);
 	
 	context.drawImage(charMap,
 		// sprite: x, y, h, w
